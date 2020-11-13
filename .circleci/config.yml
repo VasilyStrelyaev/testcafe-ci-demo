@@ -6,3 +6,5 @@ workflows:
     jobs:
       - node/test:
           version: lts
+      - store_test_results:
+          path: /tmp/test-results
