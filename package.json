@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "testcafe \"lambdatest:Chrome@85.0:Windows 10\" tests/**/* -r xunit:/tmp/test-results/res.xml"
+    "test": "testcafe chrome:headless tests/**/* -r xunit:/tmp/test-results/res.xml"
   },
   "devDependencies": {
     "testcafe": "*",
