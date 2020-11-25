@@ -8,7 +8,7 @@ jobs:
       name: node/default
       tag: lts-browsers
     steps:
-      - browser-tools/install-browsers
+      - browser-tools/install-browser-tools
       - checkout
       - node/install-packages
       - run:
