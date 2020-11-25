@@ -1,14 +1,11 @@
 version: 2.1
 orbs:
   node: circleci/node@4.1.0
-  browser-tools: circleci/browser-tools@1.1.0
 jobs:
   test:
-    executor:
-      name: node/default
-      tag: lts-browsers
+    docker:
+      - image: testcafe/testcafe:latest
     steps:
-      - browser-tools/install-browser-tools
       - checkout
       - node/install-packages
       - run:
